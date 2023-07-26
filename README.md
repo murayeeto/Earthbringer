@@ -1,2 +1,0 @@
-# Earthbringers
-Safwan Website
