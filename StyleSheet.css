@@ -1,4 +1,10 @@
 body {
   background-image: url("Images/EBbackgroun.png");
   background-color: #cccccc;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-image {
+    background-image: url(“Images/EBbackgroun.png”);
 }
