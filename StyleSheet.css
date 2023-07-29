@@ -15,13 +15,7 @@
     height: 100vh;
   }
 
-  header {
-    text-align: center; /* Center align the content within the header */
-    font-family: "Dichotomy", Arial, sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #333; /* Change this to your desired text color */
-  }
+
 
   img {
     width: 100%; /* Ensure the image fits within the container */
