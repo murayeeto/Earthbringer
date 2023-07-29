@@ -11,17 +11,22 @@
        
             text-align: center; /* Center align the content within the header */
             font-family: "Dichotomy";
-            font-size: 25px;
             color: black;
            
           }
       
-          .centered-text {
+          .container {
+            position: relative;
+            width: 100%; /* Ensure the container takes the full width of the viewport */
+            height: 100%; /* Ensure the container takes the full height of the viewport */
+          }
+          
+          .anchored-text {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -1200%);
-            margin: 0;
+            transform: translate(-50%, -50%);
+            font-size: 4vw; /* Adjust the font size using viewport width (vw) unit */
           }
         
   </style>
@@ -33,8 +38,10 @@
 
 <header>
   <img src="Images/EBBanner2.png" alt="BannerImage">
-  <p class="centered-text">EARTHBRINGER</p>
-  <p style="font-size:14px; ">CREATOR OF FRUIT</p>
+  <div class="container">
+    <p class="anchored-text">EARTHBRINGER</p>
+  </div>
+  <p style="font-size:14px; transform: translate(0%, -1600%); ">CREATOR OF FRUIT</p>
 </header>
 
 
