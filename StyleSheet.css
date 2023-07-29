@@ -1,3 +1,8 @@
+  @font-face {
+    font-family: "Dichotomy"; /* Give your custom font a name */
+    src: url("Fonts/dichtmy.ttf") format("truetype"); /* Adjust the path and format for each font file */
+    /* You can add more src lines for different font variations (e.g., bold, italic, etc.) */
+  }
   body {
     background-color: #cccccc;
     margin: 0;
@@ -12,6 +17,10 @@
 
   header {
     text-align: center; /* Center align the content within the header */
+    font-family: "Dichotomy", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Change this to your desired text color */
   }
 
   img {
