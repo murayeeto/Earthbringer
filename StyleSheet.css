@@ -22,3 +22,26 @@
     height: 35vh;
   }
 
+  header {
+    /* Use flexbox to create a flex container */
+     
+          text-align: center; /* Center align the content within the header */
+          font-family: "Dichotomy";
+          color: black;
+          height: 252px
+        }
+    
+        .container {
+          position: relative;
+          width: 100%; /* Ensure the container takes the full width of the viewport */
+          height: 10%; /* Ensure the container takes the full height of the viewport */
+        }
+        
+        .anchored-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 3vw; /* Adjust the font size using viewport width (vw) unit */
+        }
+      

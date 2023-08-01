@@ -6,29 +6,13 @@
   <link rel="stylesheet" href="StyleSheet.css">
 
   <style>
-    header {
-      /* Use flexbox to create a flex container */
-       
-            text-align: center; /* Center align the content within the header */
-            font-family: "Dichotomy";
-            color: black;
-            height: 252px
-          }
-      
-          .container {
-            position: relative;
-            width: 100%; /* Ensure the container takes the full width of the viewport */
-            height: 10%; /* Ensure the container takes the full height of the viewport */
-          }
-          
-          .anchored-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3vw; /* Adjust the font size using viewport width (vw) unit */
-          }
-        
+    
+    .image-container {
+      position: absolute;
+      top: 100px; /* Adjust the 'top' value to change the vertical position */
+      left: 200px; /* Adjust the 'left' value to change the horizontal position */
+    } 
+
   </style>
 </head>
 
@@ -43,7 +27,10 @@
   </header>
   
   
-  
+  <div class="image-container">
+    <img src="Images/EBbutton2.png" alt="ButtonBG">
+  </div>
+
   <p> Test </p>
   
 
