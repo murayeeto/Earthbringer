@@ -25,16 +25,17 @@
     .centered-button {
       position: absolute;
       top: 50%;
-      left: 50%;
+      left: 48%;
       transform: translate(-50%, -50%);
       background-color: transparent; /* Make the background transparent */
       border: 0px solid #fff; /* Add a border to the button */
       color: #fff; /* Set text color to white */
       padding: 1vw 1vw; /* Adjust padding to make the button bigger */
-      font-size: 1.5vw; /* Set font size to make the button text bigger */
+      font-size: 1.25vw; /* Set font size to make the button text bigger */
       cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
       font-family: "Dichotomy";
-    } 
+    }
+        
         
   
   
@@ -54,7 +55,9 @@
   
   <div class="image-container">
     <img src="Images/EBbutton2.png" alt="ButtonBG">
+    <button id="myButton" onclick="alert('Button clicked!')" class="centered-button" >FIRST</button>
     <button id="myButton" onclick="alert('Button clicked!')" class="centered-button" >CHAPTERS</button>
+    <button id="myButton" onclick="alert('Button clicked!')" class="centered-button" >LAST</button>
   </div>
 
 
