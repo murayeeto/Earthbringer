@@ -21,6 +21,13 @@
       width: 25vh;
       height: auto;
     }
+
+    .centered-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   
   
   </style>
@@ -39,7 +46,7 @@
   
   <div class="image-container">
     <img src="Images/EBbutton2.png" alt="ButtonBG">
-    <button id="myButton" onclick="alert('Button clicked!')">CHAPTERS</button>
+    <button id="myButton" onclick="alert('Button clicked!')" class="centered-button" >CHAPTERS</button>
   </div>
 
 
