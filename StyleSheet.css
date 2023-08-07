@@ -1,7 +1,7 @@
   @font-face {
-    font-family: "Dichotomy"; /* Give your custom font a name */
-    src: url("Fonts/dichtmy.ttf") format("truetype"); /* Adjust the path and format for each font file */
-    /* You can add more src lines for different font variations (e.g., bold, italic, etc.) */
+    font-family: "Dichotomy";
+    src: url("Fonts/dichtmy.ttf") format("truetype");
+ 
   }
   body {
     background-color: #cccccc;
@@ -18,14 +18,14 @@
 
 
   img {
-    width: 100%; /* Ensure the image fits within the container */
+    width: 100%;
     height: 35vh;
   }
 
   header {
-    /* Use flexbox to create a flex container */
+
      
-          text-align: center; /* Center align the content within the header */
+          text-align: center; 
           font-family: "Dichotomy";
           color: black;
           height: 252px
@@ -33,8 +33,8 @@
     
         .container {
           position: relative;
-          width: 100%; /* Ensure the container takes the full width of the viewport */
-          height: 10%; /* Ensure the container takes the full height of the viewport */
+          width: 100%; 
+          height: 10%; 
         }
         
         .anchored-text {
@@ -42,6 +42,6 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          font-size: 3vw; /* Adjust the font size using viewport width (vw) unit */
+          font-size: 3vw; 
         }
       
