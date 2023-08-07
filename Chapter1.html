@@ -35,7 +35,10 @@
       cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
       font-family: "Dichotomy";
     }
-        
+    
+    .body {
+      filter: grayscale(100%);
+    }
         
   
   
@@ -53,13 +56,13 @@
   </header>
   
   
-  <div class="image-container">
-    <img src="Images/EBbutton2.png" alt="ButtonBG">
-    <button id="myButton" onclick="href= "what-can-be-done.html" class="centered-button" style="top: 30%; font-size: 1vw; left: 50%">FIRST</button>
-    <button id="myButton" onclick="alert('Button clicked!')" class="centered-button" >CHAPTERS</button>
-    <button id="myButton" onclick="alert('Button clicked!')" class="centered-button" style="top: 70%; font-size: 1vw; left: 50%">LAST</button>
-  </div>
+  <div id="pdfContainer"></div>
+  <button id="prevPage">Previous</button>
+  <button id="nextPage">Next</button>
 
+  <script src="pdf.js"></script>
+  <script src="pdf.worker.js"></script>
+  <script src="ebook-reader.js"></script>
 
   
 
