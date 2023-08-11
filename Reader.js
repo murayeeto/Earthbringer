@@ -10,7 +10,7 @@
     pdfDoc.getPage(num).then(function (page) {
       var canvas = document.createElement('canvas');
       var context = canvas.getContext('2d');
-      var viewport = page.getViewport({ scale: .5});
+      var viewport = page.getViewport({ scale: .9});
   
       // Set canvas dimensions based on container size
       var containerWidth = pdfContainer.clientWidth;
