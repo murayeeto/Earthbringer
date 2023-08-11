@@ -42,10 +42,18 @@
 
     .center-container {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
       border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
-      padding: 20px; /* Optional: Add some padding for spacing */
+      padding: 2%; /* Use a percentage value for padding */
+      width: 80vw; /* Use a percentage of the viewport width */
+      max-width: 800px; /* Maximum width to ensure readability */
+    }
+    
+    #pdfContainer canvas {
+      max-width: 100%; /* Make the canvas responsive within the container */
+      height: auto; /* Maintain the aspect ratio of the PDF content */
+      width: 100%; /* Make sure the canvas occupies the full container width */
     }
         
   
