@@ -13,12 +13,12 @@
       var viewport = page.getViewport({ scale: 1.0 });
   
       // Set canvas dimensions based on container size
-      var containerWidth = pdfContainer.clientWidth - 40; // Adjust for padding
+      var containerWidth = pdfContainer.clientWidth;
       var scale = containerWidth / viewport.width;
       canvas.height = viewport.height * scale;
       canvas.width = containerWidth;
   
-      pdfContainer.innerHTML = '';
+      pdfContainer.innerHTML = ''; // Clear previous content
       pdfContainer.appendChild(canvas);
   
       page.render({ canvasContext: context, viewport: viewport });

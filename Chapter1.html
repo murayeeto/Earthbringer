@@ -46,8 +46,14 @@
       align-items: center;
       border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
       padding: 2%; /* Use a percentage value for padding */
-      width: 80vw; /* Use a percentage of the viewport width */
+      width: 80%; /* Set a percentage width for the container */
       max-width: 800px; /* Maximum width to ensure readability */
+      box-sizing: border-box; /* Include padding in width calculation */
+    }
+    
+    #pdfContainer {
+      width: 100%; /* Set full width for the container */
+      overflow: hidden; /* Prevent content overflow */
     }
     
     #pdfContainer canvas {
