@@ -40,6 +40,13 @@
       filter: grayscale(100%);
     }
 
+    .page-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    
     .center-container {
       display: flex;
       flex-direction: column;
@@ -53,7 +60,6 @@
     
     #pdfContainer {
       width: 100%; /* Set full width for the container */
-      overflow: hidden; /* Prevent content overflow */
     }
     
     #pdfContainer canvas {
@@ -61,7 +67,6 @@
       height: auto; /* Maintain the aspect ratio of the PDF content */
       width: 100%; /* Make sure the canvas occupies the full container width */
     }
-        
   
   
   </style>
@@ -82,17 +87,14 @@
   </header>
   
   
-  <div class="center-container">
-    <div id="pdfContainer"></div>
+  <div class="page-container">
+    <div class="center-container">
+      <div id="pdfContainer"></div>
+    </div>
   </div>
   <button id="prevPage">Previous</button>
   <button id="nextPage">Next</button>
-
-  <script src="pdf.js"></script>
-  <script src="pdf.worker.js"></script>
-  <script src="Reader.js"></script>
-  
-
+  <script src="ebook-reader.js"></script>
 </body>
 
 
