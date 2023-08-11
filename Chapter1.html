@@ -8,6 +8,7 @@
   <style>
 
 
+
     /* Set the image-container position to absolute */
     .image-container {
       position: absolute;
@@ -60,12 +61,19 @@
      
     #pdfContainer {
       width: 100%; /* Set full width for the container */
+      max-height: 80vh; /* Adjust the maximum height of the container */
+      overflow: hidden; /* Hide any overflow content */
     }
     
-    #pdfContainer canvas {
-      max-width: 100%; /* Make the canvas responsive within the container */
-      height: auto; /* Maintain the aspect ratio of the PDF content */
-      width: 100%; /* Make sure the canvas occupies the full container width */
+    /* Optional: Adjust the button position and style */
+    #prevPage,
+    #nextPage {
+      margin-top: 5px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
     }
   
   
