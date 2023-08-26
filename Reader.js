@@ -11,18 +11,18 @@
       var canvas = document.createElement('canvas');
       var context = canvas.getContext('2d');
 
-      // Calculate scale based on container width and page width
+      // Calculate scale based on container width and desired width
       var containerWidth = pdfContainer.clientWidth;
-      var scale = containerWidth / page.getViewport({ scale: .5 }).width;
-      var viewport = page.getViewport({ scale: scale });
+      var scale = containerWidth / page.getViewport({ scale: 1 }).width;
+      var scaledViewport = page.getViewport({ scale: scale });
 
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
+      canvas.height = scaledViewport.height;
+      canvas.width = scaledViewport.width;
 
       pdfContainer.innerHTML = ''; // Clear previous content
       pdfContainer.appendChild(canvas);
 
-      page.render({ canvasContext: context, viewport: viewport });
+      page.render({ canvasContext: context, viewport: scaledViewport });
     });
   };
 
@@ -47,7 +47,7 @@
     }
   });
 
-  // Load PDF when the page is ready PLEASE WORK???
+  // Load PDF when the page is ready
   document.addEventListener('DOMContentLoaded', function () {
     loadPDF('ChapterList/Chapter1.pdf');
   });
