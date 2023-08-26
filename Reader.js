@@ -13,15 +13,16 @@
 
       // Calculate scale based on container width and desired width
       var containerWidth = pdfContainer.clientWidth;
-      var scale = containerWidth / page.getViewport({ scale: 1 }).width;
-      var scaledViewport = page.getViewport({ scale: scale });
+      var viewport = page.getViewport({ scale: 1 });
+      var scale = containerWidth / viewport.width;
 
-      canvas.height = scaledViewport.height;
-      canvas.width = scaledViewport.width;
+      canvas.height = viewport.height * scale;
+      canvas.width = containerWidth;
 
       pdfContainer.innerHTML = ''; // Clear previous content
       pdfContainer.appendChild(canvas);
 
+      var scaledViewport = page.getViewport({ scale: scale });
       page.render({ canvasContext: context, viewport: scaledViewport });
     });
   };
