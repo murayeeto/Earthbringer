@@ -47,7 +47,7 @@
     }
   });
 
-  // Load PDF when the page is ready
+  // Load PDF when the page is ready PLEASE WORK???
   document.addEventListener('DOMContentLoaded', function () {
     loadPDF('ChapterList/Chapter1.pdf');
   });
