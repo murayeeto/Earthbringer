@@ -49,6 +49,6 @@
 
   // Load PDF when the page is ready
   document.addEventListener('DOMContentLoaded', function () {
-    loadPDF('ChapterList/test.pdf');
+    loadPDF('ChapterList/Chapter1.pdf');
   });
 })();
