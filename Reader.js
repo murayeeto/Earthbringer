@@ -13,7 +13,7 @@
 
       // Calculate scale based on container width and page width
       var containerWidth = pdfContainer.clientWidth;
-      var scale = containerWidth / page.getViewport({ scale: 1 }).width;
+      var scale = containerWidth / page.getViewport({ scale: .5 }).width;
       var viewport = page.getViewport({ scale: scale });
 
       canvas.height = viewport.height;
